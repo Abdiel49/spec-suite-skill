@@ -1,5 +1,8 @@
 ---
 name: spec-suite
+version: 1.0.0
+author: Abdiel49
+tags: [dev, compliance, docs, planning]
 description: |
   Orchestrates the creation of professional software specifications and legal policy documents for any digital product or project. This is a full documentation suite covering technical architecture, product requirements, legal compliance, and operational policies.
 
