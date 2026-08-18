@@ -1,6 +1,6 @@
 {
   "name": "spec-suite-skill",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "description": "Technical specifications and legal compliance suite for AI agents",
   "main": "index.js",
