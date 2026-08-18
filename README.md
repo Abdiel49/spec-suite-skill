@@ -37,6 +37,28 @@ These are the structural drafts governing the platform's operation (requires leg
 
 ---
 
+## 📦 Installation
+
+This skill can be easily installed into your agent's workspace using NPM or GitHub.
+
+### Method 1: Via NPM (Recommended)
+You can directly execute the installer via `npx`. This will automatically copy the skill into your project's `.agents/skills/spec-suite` directory:
+
+```bash
+npx @abdiel49/spec-suite-skill
+```
+
+### Method 2: Via GitHub (Manual Clone)
+Alternatively, clone the repository directly into your agent's skills directory:
+
+```bash
+mkdir -p .agents/skills
+cd .agents/skills
+git clone https://github.com/abdiel49/spec-suite-skill.git spec-suite
+```
+
+---
+
 ## 🛠️ How to Use
 
 You can trigger the skill naturally through conversation by asking the agent to generate a document. For example:

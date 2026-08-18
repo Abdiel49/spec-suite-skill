@@ -1,0 +1,21 @@
+{
+  "name": "@abdiel49/spec-suite-skill",
+  "version": "1.0.0",
+  "description": "Technical specifications and legal compliance suite for AI agents",
+  "main": "index.js",
+  "bin": {
+    "spec-suite": "./bin/cli.js"
+  },
+  "files": [
+    "SKILL.md",
+    "references/",
+    "bin/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "fs-extra": "^11.2.0"
+  }
+}
