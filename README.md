@@ -45,7 +45,7 @@ This skill can be easily installed into your agent's workspace using NPM or GitH
 You can directly execute the installer via `npx`. This will automatically copy the skill into your project's `.agents/skills/spec-suite` directory:
 
 ```bash
-npx @abdiel49/spec-suite-skill
+npx spec-suite-skill
 ```
 
 ### Method 2: Via GitHub (Manual Clone)
