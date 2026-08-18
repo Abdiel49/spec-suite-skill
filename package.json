@@ -1,5 +1,5 @@
 {
-  "name": "@abdiel49/spec-suite-skill",
+  "name": "spec-suite-skill",
   "version": "1.0.0",
   "description": "Technical specifications and legal compliance suite for AI agents",
   "main": "index.js",
