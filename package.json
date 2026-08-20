@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/Abdiel49/spec-suite-skill#readme",
   "repository": {
-    "url": "https://github.com/Abdiel49/spec-suite-skill",
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/Abdiel49/spec-suite-skill.git"
   },
   "author": "Abdiel49",
   "maintainers": [{
