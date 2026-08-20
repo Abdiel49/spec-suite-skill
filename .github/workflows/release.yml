@@ -1,0 +1,67 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Create Release PR
+        uses: google-github-actions/release-please-action@v4
+        id: release
+        with:
+          release-type: node
+          package-name: spec-suite-skill
+          skip-github-release: false
+          skip-github-pull-request: false
+          include-v-in-tag: true
+          changelog-types: |
+            [
+              {"type": "feat", "section": "Features", "hidden": false},
+              {"type": "fix", "section": "Bug Fixes", "hidden": false},
+              {"type": "docs", "section": "Documentation", "hidden": false},
+              {"type": "refactor", "section": "Code Refactoring", "hidden": false},
+              {"type": "perf", "section": "Performance Improvements", "hidden": false},
+              {"type": "test", "section": "Tests", "hidden": true},
+              {"type": "chore", "section": "Maintenance", "hidden": true},
+              {"type": "ci", "section": "CI/CD", "hidden": true}
+            ]
+
+      - name: Checkout code
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        if: ${{ steps.release.outputs.release_created }}
+        run: npm ci
+
+      - name: Publish to NPM
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --access public
+
+      - name: Upload release assets
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: ./package.json
+          asset_name: package.json
+          asset_content_type: application/json
