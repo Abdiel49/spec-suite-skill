@@ -192,9 +192,85 @@ All documents are generated in Markdown format with:
 
 ---
 
-## Version & Support
+## Releases & Versioning
 
-For issues, feature requests, or contributions, visit the [GitHub repository](https://github.com/Abdiel49/spec-suite-skill).
+Spec Suite follows **Semantic Versioning** (MAJOR.MINOR.PATCH) with automated releases via [Release Please](https://github.com/googleapis/release-please).
+
+**How It Works:**
+- Commits follow [Conventional Commits](https://www.conventionalcommits.org/) format
+- `feat:` commits trigger MINOR version bumps
+- `fix:` commits trigger PATCH version bumps
+- `feat!:` commits trigger MAJOR version bumps (breaking changes)
+
+**Latest Release:** [View on GitHub](https://github.com/Abdiel49/spec-suite-skill/releases)
+
+**Update Your Installation:**
+```bash
+npm update spec-suite-skill
+```
+
+---
+
+## Contributing
+
+We welcome contributions! Before getting started, please read [CONTRIBUTING.md](CONTRIBUTING.md) for:
+- Conventional Commit guidelines
+- Branching strategy (`ft/`, `fx/` prefixes)
+- Pull request process
+- Development setup and testing
+
+### Quick Start for Contributors
+
+```bash
+# 1. Fork and clone
+git clone https://github.com/YOUR-USERNAME/spec-suite-skill.git
+cd spec-suite-skill
+
+# 2. Create feature branch
+git checkout -b ft/your-feature-name
+
+# 3. Make changes with conventional commits
+git commit -m "feat(core): your feature description"
+
+# 4. Push and open Pull Request
+git push origin ft/your-feature-name
+```
+
+### Commit Format Examples
+
+```bash
+# Feature
+git commit -m "feat(cli): add custom output directory support"
+
+# Bug fix
+git commit -m "fix(schema): correct relationship mapping"
+
+# Documentation
+git commit -m "docs(readme): update installation steps"
+
+# No version bump (maintenance)
+git commit -m "chore(deps): update commander to v13.0.0"
+```
+
+---
+
+## Security
+
+For security policies, vulnerability reporting, and audit information, see [SECURITY.md](SECURITY.md).
+
+---
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for detailed release history and feature notes.
+
+---
+
+## Support & Feedback
+
+- **Issues & Bugs:** [GitHub Issues](https://github.com/Abdiel49/spec-suite-skill/issues)
+- **Feature Requests:** [GitHub Issues](https://github.com/Abdiel49/spec-suite-skill/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/Abdiel49/spec-suite-skill/discussions)
 
 ---
 

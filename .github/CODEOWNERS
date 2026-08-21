@@ -1,0 +1,20 @@
+# Code Owners
+
+This file defines the maintainers and code owners for this repository.
+
+* @Abdiel49 — Project maintainer and primary contact
+
+## Responsibilities
+
+The code owner(s) are responsible for:
+- Reviewing and merging pull requests
+- Responding to issues and discussions
+- Publishing releases
+- Maintaining security and code quality
+- Updating documentation
+
+## Contact
+
+For questions or concerns, reach out via:
+- GitHub Issues: https://github.com/Abdiel49/spec-suite-skill/issues
+- GitHub Discussions: https://github.com/Abdiel49/spec-suite-skill/discussions

@@ -3,12 +3,21 @@
   "version": "1.0.5",
   "license": "MIT",
   "description": "Technical specifications and legal compliance suite for AI agents",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
   "main": "index.js",
   "bin": {
     "spec-suite": "./bin/cli.js"
   },
   "files": [
     "SKILL.md",
+    "README.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "CHANGELOG.md",
+    "LICENSE",
     "references/",
     "bin/"
   ],
@@ -25,9 +34,9 @@
     "name": "Abdiel49"
   }],
   "bugs": {
-    "url": "https://github.com/Abdiel49/spec-suite-skill/issues/new"
+    "url": "https://github.com/Abdiel49/spec-suite-skill/issues"
   },
-  "keywords": ["skill", "PRD" ,"TRD", "Product Requirements Document", "Technical Requirements Document", "specifications", "legal compliance", "AI agents", "Claude"],
+  "keywords": ["skill", "PRD", "TRD", "Product Requirements Document", "Technical Requirements Document", "specifications", "legal compliance", "AI agents", "Claude", "documentation", "automation"],
   "dependencies": {
     "commander": "^12.0.0",
     "fs-extra": "^11.2.0"
