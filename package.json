@@ -1,6 +1,6 @@
 {
   "name": "spec-suite-skill",
-  "version": "1.0.5",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "Technical specifications and legal compliance suite for AI agents",
   "engines": {
@@ -30,13 +30,27 @@
     "url": "git+https://github.com/Abdiel49/spec-suite-skill.git"
   },
   "author": "Abdiel49",
-  "maintainers": [{
-    "name": "Abdiel49"
-  }],
+  "maintainers": [
+    {
+      "name": "Abdiel49"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/Abdiel49/spec-suite-skill/issues"
   },
-  "keywords": ["skill", "PRD", "TRD", "Product Requirements Document", "Technical Requirements Document", "specifications", "legal compliance", "AI agents", "Claude", "documentation", "automation"],
+  "keywords": [
+    "skill",
+    "PRD",
+    "TRD",
+    "Product Requirements Document",
+    "Technical Requirements Document",
+    "specifications",
+    "legal compliance",
+    "AI agents",
+    "Claude",
+    "documentation",
+    "automation"
+  ],
   "dependencies": {
     "commander": "^12.0.0",
     "fs-extra": "^11.2.0"

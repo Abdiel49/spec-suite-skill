@@ -26,6 +26,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## 1.0.0 (2026-08-21)
+
+
+### Features
+
+* add GitHub Actions workflows for NPM publishing and release management ([951fa40](https://github.com/Abdiel49/spec-suite-skill/commit/951fa40d05469a12a541a48ab775af7aefeed656))
+* enhance documentation and automate release process ([7a1b9c9](https://github.com/Abdiel49/spec-suite-skill/commit/7a1b9c9082347b498e2056d99b582784a2c365d2))
+
+
+### Bug Fixes
+
+* update NPM publish workflow to include environment and remove NODE_AUTH_TOKEN ([55635f9](https://github.com/Abdiel49/spec-suite-skill/commit/55635f94fa8fd8abc86cd751dd9715783dbacc0e))
+
 ## [1.0.5] — 2026-08-20
 
 ### Added
