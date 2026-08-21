@@ -1,0 +1,28 @@
+{
+  "packages": {
+    ".": {
+      "release-type": "node",
+      "package-name": "spec-suite-skill",
+      "include-v-in-tag": true,
+      "include-paths": [
+        "SKILL.md",
+        "README.md",
+        "LICENSE",
+        "CONTRIBUTING.md",
+        "SECURITY.md",
+        "references",
+        "package.json"
+      ],
+      "changelog-sections": [
+        {"type": "feat", "section": "Features", "hidden": false},
+        {"type": "fix", "section": "Bug Fixes", "hidden": false},
+        {"type": "docs", "section": "Documentation", "hidden": false},
+        {"type": "refactor", "section": "Code Refactoring", "hidden": false},
+        {"type": "perf", "section": "Performance Improvements", "hidden": false},
+        {"type": "test", "section": "Tests", "hidden": true},
+        {"type": "chore", "section": "Maintenance", "hidden": true},
+        {"type": "ci", "section": "CI/CD", "hidden": true}
+      ]
+    }
+  }
+}
