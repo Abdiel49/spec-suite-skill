@@ -84,6 +84,7 @@ dist/
 .vscode/
 .history/
 *.code-workspace
+blog-post.md
 
 # Package manager
 .npmrc
